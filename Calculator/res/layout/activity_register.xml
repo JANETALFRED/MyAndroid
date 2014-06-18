@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#5074"
+    tools:context=".Register" >
+
+    <Button
+        android:id="@+id/Register Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button Submit"
+        android:layout_alignBottom="@+id/Button Submit"
+        android:layout_alignParentLeft="true"
+        android:text="@string/btnCancel1" />
+
+    <Button
+        android:id="@+id/Button Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="72dp"
+        android:layout_marginRight="36dp"
+        android:text="@string/btnSubmit1" />
+
+    <TextView
+        android:id="@+id/FirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/tvFirstName" />
+
+    <TextView
+        android:id="@+id/IDNUMBER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FirstName"
+        android:layout_marginTop="52dp"
+        android:layout_toRightOf="@+id/Register Cancel"
+        android:text="@string/tvIDNumber" />
+
+    <TextView
+        android:id="@+id/IDNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Register Cancel"
+        android:layout_alignRight="@+id/IDNUMBER"
+        android:layout_marginBottom="40dp"
+        android:text="@string/tvIDNumber" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="63dp"
+        android:text="@string/tvEmail" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Register Cancel"
+        android:layout_alignRight="@+id/Button Submit"
+        android:layout_below="@+id/FirstName"
+        android:layout_marginLeft="60dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/IDNUMBER"
+        android:ems="10"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/ etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Register Cancel"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_toLeftOf="@+id/Button Submit"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+</RelativeLayout>

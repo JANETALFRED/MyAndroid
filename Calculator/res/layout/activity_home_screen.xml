@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#5014"
+    tools:context=".HomeScreen" >
+
+    <TextView
+        android:id="@+id/Number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="88dp"
+        android:textSize="20sp"
+         android:textColor="#000fff"
+        android:text="@string/tvNumber1" />
+
+    <TextView
+        android:id="@+id/Number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Number1"
+        android:layout_below="@+id/Number1"
+        android:layout_marginTop="32dp"
+          android:textSize="20sp"
+           android:textColor="#000fff"
+        android:text="@string/tvNumber2" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Number2"
+        android:layout_below="@+id/Number2"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textColor="#000fff"
+        android:text="@string/tvResult" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Number2"
+        android:layout_alignRight="@+id/subtraction"
+        android:layout_below="@+id/Number1"
+        
+        android:ems="10"
+        android:inputType="phone" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/btnadditon"
+        android:textSize="17sp"
+         android:textColor="#000fff" />
+
+    <Button
+        android:id="@+id/subtraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Add"
+        android:layout_alignBottom="@+id/Add"
+        android:layout_toRightOf="@+id/Number2"
+        android:text="@string/btnsubtraction"
+        android:textSize="16sp" 
+        android:textColor="#000fff"/>
+
+    <Button
+        android:id="@+id/Divison"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Multiplication"
+        android:layout_alignBottom="@+id/Multiplication"
+        android:layout_alignLeft="@+id/subtraction"
+        android:text="@string/btnDivision"
+         android:textColor="#000fff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/Multiplication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="68dp"
+        android:text="@string/btnMultiplication"
+         android:textColor="#000fff"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Number2"
+        android:layout_toRightOf="@+id/Add"
+        android:ems="10"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Result"
+        android:layout_below="@+id/Result"
+        android:ems="10"
+        android:inputType="numberPassword" />
+
+</RelativeLayout>
